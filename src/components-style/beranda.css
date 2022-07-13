@@ -1,0 +1,553 @@
+@media only screen and (min-width:375px){
+    .container-beranda{
+        position: relative;
+        width: 375px;
+        height: 785px;
+        background: #FFFFFF;
+    }
+
+    .beranda-header{
+        position: absolute;
+        width: 110px;
+        height: 35px;
+        left: 18px;
+        top: 40px; 
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .container-beranda-top{
+        position: absolute;
+        width: 375px;
+        height: 211px;
+        left: 0px;
+        top: 0px;
+        background: linear-gradient(180deg, #47ADE7 8.53%, #93D4FA 129.62%);
+    }
+
+    .container-beranda-top .notifBell{
+        position: absolute;
+        width: 19.61px;
+        height: 22.5px;
+        left: 340px;
+        top: 45.5px;
+    }
+
+    .sub-container-beranda-top{
+        position: absolute;
+        width: 177px;
+        height: 23px;
+        left: 17px;
+        top: 108px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        color: #FFFFFF;
+    }
+
+    .sub-container-beranda-top .mapLocation{
+        position: absolute;
+        top: 25px;
+        left: 0;
+    }
+
+    .sub-container-beranda-top .city-name{
+        position: absolute;
+        width: 18px;
+        height: 16px;
+        left: 15px;
+        top: 23px;  
+        font-family: 'Roboto';
+        font-weight: lighter;
+        font-size: 16px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+
+    .container-ticket-visit{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        position: absolute;
+        width: 325px;
+        height: 99px;
+        left: 15px;
+        top: 162px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+    }
+    .container-ticket-visit-header{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        width: 325px;
+        height: 45px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin-top: 40px;
+    }
+    .container-ticket-visit-header-ticket{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 12px;
+        width: 162.5px;
+        height: 45px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin-top: -19px;
+        margin-right: -20px;
+    }
+    .container-ticket-visit-header-ticket .ticket{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        width: 28px;
+        height: 27px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .container-ticket-visit-header .span-ticket{
+        width: 49px;
+        height: 19px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 19px;
+        text-align: center;
+        color: #F5BA46;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .container-ticket-visit-header .information{
+        width: 16px;
+        height: 16px;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+
+    .vertical-line{
+        width: 45px;
+        height: 0px;
+        border: 0.3px solid #C4C4C4;
+        transform: rotate(90deg);
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .container-ticket-visit-header-bag{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 12px;
+        width: 162.5px;
+        height: 45px;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        margin-top: -19px;
+        margin-left: -20px;
+    }
+    .container-ticket-visit-header-bag .bag{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        width: 27px;
+        height: 45px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .container-ticket-visit-header-bag .span-visit{
+        width: 46px;
+        height: 19px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 19px;
+        text-align: center;
+        color: #686C71;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .container-ticket-visit-header-bag .information{
+        width: 16px;
+        height: 16px;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+
+    .line-horizontal{
+        width: 325px;
+        height: 0px;
+        margin: 0;
+        border: 0.3px solid #C4C4C4;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        margin-top: -20px;
+    }
+
+    .p-batas-waktu{
+        margin: 0;
+        width: 198px;
+        height: 14px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #C4C4C4;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+
+    .span-batas-waktu{
+        color: black;
+        font-weight: 500;
+        font-family: 'Roboto';
+        font-style: normal;
+    }
+
+    .container-keluhan{
+        position: absolute;
+        top: 0px;
+        left: 0;
+        margin-left: -15px;
+    }
+
+    .container-laporan-keluhan{
+        position: absolute;
+        width: 165px;
+        height: 165px;
+        left: 15px;
+        top: 135px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+    }
+    .container-laporan-keluhan span{
+        position: absolute;
+        width: 103px;
+        height: 19px;
+        left: 30px;
+        top: 124px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #000000;
+    }
+    .container-laporan-keluhan img{
+        position: absolute;
+        left: 38.2%;
+        right: 67.2%;
+        top: 27.02%;
+        bottom: 52.87%;
+        cursor: pointer;
+    }
+
+    .container-keluhan-saya{
+        position: absolute;
+        width: 165px;
+        height: 165px;
+        left: 195px;
+        top: 135px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+    }
+    .container-keluhan-saya img{
+        position: absolute;
+        left: 34.87%;
+        top: 27.02%;
+        bottom: 52.86%;
+        cursor: pointer;
+    }
+    .container-keluhan-saya span{
+        position: absolute;
+        width: 103px;
+        height: 19px;
+        left: 35px;
+        top: 124px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .container-aktivitas-terbaru{
+        position: absolute;
+        width: 325px;
+        height: 217px;
+        left: 15px;
+        top: 329px;
+    }
+    .container-aktivitas-terbaru-header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .container-aktivitas-terbaru-header .aktivitas-terbaru{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+    .container-aktivitas-terbaru-header .lihat-semua{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+        color: #47ADE7;
+    }
+    .container-sub-keluhan{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        gap: 7px;
+        width: 315px;
+        height: 84px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin-left: -15px;
+    }
+    .container-sub-keluhan div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        width: 315px;
+        height: 28px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .container-sub-keluhan div .laptop-rusak{
+        width: 143.5px;
+        height: 16px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .container-sub-keluhan div .menunggu{
+        width: 58px;
+        height: 14px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FAD24D;
+        flex: none;
+        order: 0;
+        flex-grow: 5;
+    }
+
+    .container-sub-keluhan .keluhan{
+        width: 58px;
+        height: 19px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .container-sub-visit{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        gap: 7px;
+        width: 315px;
+        height: 84px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin-left: -15px;
+    }
+    .container-sub-visit div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        width: 315px;
+        height: 28px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .container-sub-visit div .teknisi{
+        width: 143.5px;
+        height: 16px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        flex: none;
+        order: 0;
+    }
+    .container-sub-visit .tanggal{
+        width: 105px;
+        height: 16px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        flex: none;
+        order: 0;
+        flex-grow: 5;
+    }
+    .container-sub-visit .visit{
+        width: 58px;
+        height: 19px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 1000;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .footer-beranda{
+        position: absolute;
+        left: 0.53%;
+        right: -0.27%;
+        bottom: 0%; 
+        background: #C4C4C4;
+        box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-beranda .sub-footer-beranda{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 30px;
+        position: absolute;
+        left: 0.27%;
+        right: -0.27%;
+        top: 90.83%;
+        bottom: 0%;
+        background: #FFFFFF;
+        padding-bottom: 50px;
+    }
+
+    .beranda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 6px;
+        width: 105px;
+        height: 42px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        margin-bottom: -38px;
+        cursor: pointer;
+    }
+    .cabang{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 6px;
+        width: 105px;
+        height: 42px;
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+        margin-bottom: -38px;
+        cursor: pointer;
+    }
+    .profil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 6px;
+        width: 105px;
+        height: 42px;
+        flex: none;
+        order: 2;
+        flex-grow: 1;
+        margin-bottom: -38px;
+        cursor: pointer;
+    }
+}

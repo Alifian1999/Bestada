@@ -1,16 +1,15 @@
 import React, { useState,useEffect } from "react";
 import '../components-style/login.css'
+import baseAPI from "../API/baseAPI";
 import { Link } from "react-router-dom";
-import axios from "axios";
-import StatusBar from "../components/StatusBar";
 
 import SplashScreen from "../components/SplashScreen";
 import eyeLogoFalse from '../assets/eye-logo.png'
 import eyeLogoTrue from '../assets/eye-logo-true.png'
-import baseAPI from "../API/baseAPI";
 
 
-const Login = () =>{
+
+const Register = () =>{
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [displayPassword, setDisplayPassword] = useState(false)
@@ -34,18 +33,17 @@ const Login = () =>{
             username : username,
             password : password
         }
-        const options = {
-          method: 'POST',
-          url: 'https://stoplight.io/mocks/bestada/interview/65467795/mobile/user/v1/auth/signin',
-          headers: {'Content-Type': 'application/json', 'X-API-KEY': 'xxx'},
-          data: {username: 'tes123', password: '123'}
-        };
-        
-        axios.request(options).then(function (response) {
-          console.log(response.data);
-        }).catch(function (error) {
-          console.error(error);
-        });
+        try {
+            const server = await baseAPI.post('auth/signup',user,{
+                headers:{
+                    'Content-Type' : 'application/json',
+                    'X-API-KEY' : 'xxx'
+                }
+            })
+            console.log(server.data);
+        } catch (error) {
+            console.log(error);
+        }
     }
     
     useEffect(()=>{
@@ -63,10 +61,9 @@ const Login = () =>{
                 <SplashScreen/>
                 
             : <div className="container-login-content">
-                <StatusBar/>
                 <div className="container-login-content-header">
                     <h1>ZidDesk</h1>
-                    <h3>Masuk ke ZidDesk</h3>
+                    <h3>Register</h3>
                 </div>
                 {isLogin? null :
                     <p className="danger-notif-failed-to-login">Silakan masukkan username dan kata sandi yang sudah terdaftar ini untuk masuk</p>
@@ -74,30 +71,30 @@ const Login = () =>{
                 <form onSubmit={handleSubmit} className="container-login-content-form">
                     <div className={isLogin? "container-login-content-form-username" : classnameLoginError.username}>
                         <label htmlFor="username">username</label>
-                        <input onChange={e => setUsername(e.target.value)} id="username" placeholder="username"/>
+                        <input onChange={e => setUsername(e.target.value)} id="username" placeholder="username" required/>
                     </div>
                     {isLogin? null :
-                        <small className="danger-notif-failed-login-username">Username yang anda masukkan salah</small>
+                        <small className="danger-notif-failed-login-username">Username sudah dipakai</small>
                     }
                     <div className={isLogin? "container-login-content-form-password" : classnameLoginError.password}>
                         <label htmlFor="password">password</label>
-                        <input onChange={e => setPassword(e.target.value)} id="password" placeholder="password" type={displayPassword?'text' : 'password'}/>
+                        <input onChange={e => setPassword(e.target.value)} id="password" placeholder="password" type={displayPassword?'text' : 'password'} required/>
                         <img onClick={displayPassword? ()=>setDisplayPassword(false) : ()=>setDisplayPassword(true)} className="image-eye"  src={displayPassword? eyeLogoTrue : eyeLogoFalse} alt="" />
                     </div>
                     {isLogin? null :
-                        <small className="danger-notif-failed-login-password">Password yang anda masukkan salah</small>
+                        <small className="danger-notif-failed-login-password">Password sudah dipakai</small>
                     }
                     {buttonState?
-                    <button style={{color:'white',background:'#47ADE7'}}>Masuk</button>
+                    <button style={{color:'white',background:'#47ADE7'}}>Register</button>
                     :
-                    <button style={{cursor:'default'}} disabled>Masuk</button>
+                    <button style={{cursor:'default'}} disabled>Register</button>
                     }
                 </form>
-                <Link to='/register' className={isLogin? "lupa-kata-sandi" : classnameLoginError.kataSandi}>Lupa kata sandi?</Link>
+                <Link to='/login' className={isLogin? "lupa-kata-sandi" : classnameLoginError.kataSandi}>Sudah punya akun?</Link>
             </div>
         }
         </div>
     )
 }
 
-export default Login
+export default Register
