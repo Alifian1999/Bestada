@@ -1,0 +1,118 @@
+@media only screen and (min-width:375px){
+    .cover-content{
+        position: absolute;
+        height: 500px;
+        background: black;
+        opacity: 0.7;
+        width: 100%;
+    }
+   .container-modal{
+    position: absolute;
+    left: 0;
+    right: auto;
+    bottom: 0px;
+    width: 375px;
+    height: 250px;
+    background: white;
+    text-align: center;
+   }
+   .closeLogo img{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+   }
+
+   .closeLogo span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+   }
+
+   .container-list-modal{
+    margin-top: 20px;
+    text-align: start;
+   }
+   .container-list-modal span{
+    margin-left: 15px;
+   }
+
+   .container-list-modal .komputer-laptop {
+    margin-top: 10px;
+    position: absolute;
+    padding-top: 10px;
+    width: 345px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+   }
+   .container-list-modal .komputer-laptop img{
+    position: absolute;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+   }
+
+   .container-list-modal .cctv {
+    position: absolute;
+    margin-top: 20px;
+    padding-top: 10px;
+    top: 110px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-top: 0.5px solid #F0F2F9;
+    margin-left: 0;
+   }
+
+   .container-list-modal .cctv img{
+    position: absolute;
+    right: 29.5px;
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+   }
+
+   .container-list-modal .ac {
+    border-top: 0.5px solid #F0F2F9;
+    margin-top: 25px;
+    position: absolute;
+    padding-top: 10px;
+    top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+   }
+   .container-list-modal .ac img{
+    position: absolute;
+    right: 29.5px;
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+   }
+}

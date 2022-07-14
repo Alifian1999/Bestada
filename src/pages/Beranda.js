@@ -17,6 +17,7 @@ import cabang from '../assets/cabang.png'
 import profil from '../assets/profil.png'
 // 
 
+
 const Beranda = () =>{
     return(
         <div className="container-beranda">
@@ -54,7 +55,7 @@ const Beranda = () =>{
                         </Link>
                     </div>
                     <div className="container-keluhan-saya">
-                        <img src={bookList} alt="" />
+                        <Link to='/beranda/history-keluhan'><img src={bookList} alt="" /></Link>
                         <span>keluhan Saya</span>
                     </div>
                 </div>

@@ -1,0 +1,61 @@
+@media only screen and (min-width:375px){
+    .container-submit-success{
+        position: relative;
+        width: 375px;
+        height: 720px;
+        background: #FFFFFF;        
+    } 
+
+    .container-submit-success img{
+        position: absolute;
+        left: 35.2%;
+        right: 35.47%;
+        top: 29.31%;
+        bottom: 55.42%;    
+    }
+
+    .container-submit-success p{
+        position: absolute;
+        width: 235px;
+        height: 28px;
+        left: 70px;
+        top: 360px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .container-submit-success div{
+        position: absolute;
+        width: 235px;
+        height: 28px;
+        left: 70px;
+        top: 430px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .container-submit-success div button{
+        width: 81px;
+        height: 46px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #47ADE7;
+        border: none;
+        background: rgba(71, 173, 231, 0.1);
+        border-radius: 50px;
+    }
+}

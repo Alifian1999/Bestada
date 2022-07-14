@@ -11,7 +11,7 @@
         width: 345px;
         height: 185px;
         left: 15px;
-        top: 142px;
+        top: 125px;
     }
 
     .container-insert-foto{
@@ -45,7 +45,7 @@
         margin-top: -30px;
     }
 
-    .container-insert-foto input{
+    .container-insert-foto .foto-keluhan{
         border: none;
         width: 124px;
         height: 19px;
@@ -59,6 +59,14 @@
         flex: none;
         order: 1;
         flex-grow: 0;
+        cursor: pointer;
+    }
+    .container-insert-foto input{
+        display: none;
+    }
+
+    .container-insert-foto img{
+        cursor: pointer;
     }
 
     .container-apa-keluhanmu{
@@ -66,7 +74,7 @@
         width: 345px;
         height: 75px;
         left: 15px;
-        top: 302px;
+        top: 280px;
     }
 
     .container-apa-keluhanmu input{
@@ -79,23 +87,211 @@
         position: absolute;
         width: 345px;
         height: 46px;
-        left: 15px;
-        top: 331px;
+        left: 0;
+        top: 50px;
         border: 0.8px solid #C4C4C4;
         border-radius: 5px;
+        font-weight: 100;
+        font-style: normal;
+        font-weight: 100;
     }
 
-    .container-apa-keluhanmu span{
+    .container-apa-keluhanmu label{
         position: absolute;
-        width: 121px;
+        width: 171px;
         height: 19px;
         left: 15px;
-        top: 302px;
+        top: 20px;
         font-family: 'Roboto';
         font-style: normal;
-        font-weight: 500;
+        font-weight: bolder;
         font-size: 16px;
         line-height: 19px;
         color: #000000;
+    }
+
+    .button-request-service button{
+        width: 38px;
+        height: 16px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #C4C4C4;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        border: none;
+        cursor: pointer;
+    }
+
+    .button-request-service-success-button{
+        width: 38px;
+        height: 16px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        border: none;
+        cursor: pointer;
+        background: none;
+        color: white;
+    }
+    .button-request-service-success{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        gap: 10px;
+        position: absolute;
+        width: 345px;
+        height: 46px;
+        left: 0px;
+        top: 659px;
+        border-radius: 3px;
+        background: #47ADE7;
+    }
+
+    .button-request-service{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        gap: 10px;
+        position: absolute;
+        width: 345px;
+        height: 46px;
+        left: 0px;
+        top: 659px;
+        border-radius: 3px;
+    }
+
+    .container-kategori-keluhan{
+        position: absolute;
+        width: 345px;
+        height: 75px;
+        left: 15px;
+        top: 356px;
+    }
+
+    .container-kategori-keluhan label{
+        position: absolute;
+        width: 173px;
+        height: 19px;
+        left: 15px;
+        top: 30px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+
+    .container-kategori-keluhan-input{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px;
+        gap: 10px;
+        position: absolute;
+        width: 345px;
+        height: 46px;
+        left: 0;
+        top: 60px;
+        border: 0.8px solid #C4C4C4;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .container-kategori-keluhan-input label{
+        position: absolute;
+        width: 293px;
+        height: 16px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #C4C4C4;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        top: 14px;
+        cursor: pointer;
+    }
+
+    .container-kategori-keluhan-input img{
+        position: absolute;
+        right: 10px;
+        width: 12px;
+        height: 6px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .deskripsi-keluhan{
+        position: absolute;
+        width: 345px;
+        height: 147px;
+        left: 15px;
+        top: 470px;
+    }
+
+    .deskripsi-keluhan label{
+        position: absolute;
+        width: 178px;
+        height: 19px;
+        left: 15px;
+        top: 0x;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+
+    .deskripsi-keluhan textarea{
+        padding: 15px;
+        gap: 10px;
+        position: absolute;
+        height: 98px;
+        left: 0;
+        top: 30px;
+        border: 0.8px solid #C4C4C4;
+        border-radius: 5px;
+        width: 313px;
+        height: 106px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: start;
+        resize: initial;
+        width: 315px;
+        height: 102px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
     }
 }

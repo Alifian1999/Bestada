@@ -27,4 +27,8 @@
         order: 1;
         flex-grow: 0;
     }
+
+    .container-navbar-lapor-keluhan img{
+        margin-left: 10px;
+    }
 }

@@ -1,0 +1,274 @@
+@media only screen and (min-width:375px){
+    .container-history-keluhan{
+        position: relative;
+        width: 375px;
+        height: 720px;
+        background: #FFFFFF;
+    }
+
+    .container-history-keluhan .container-filter-information{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        position: absolute;
+        width: 411px;
+        height: 29px;
+        left: 15px;
+        top: 90px;
+    }
+
+    .container-filter-information .menunggu{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 5px 10px;
+        gap: 10px;
+        width: 96px;
+        height: 29px;
+        border: 1px solid #C4C4C4;
+        border-radius: 50px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .container-filter-information .menunggu span{
+        width: 76px;
+        height: 19px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #C4C4C4;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .container-filter-information .semua{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 5px 10px;
+        gap: 10px;
+        width: 70px;
+        height: 29px;
+        background: rgba(71, 173, 231, 0.1);
+        border: 1px solid #47ADE7;
+        border-radius: 50px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .container-filter-information .semua span{
+        width: 50px;
+        height: 19px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #47ADE7;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .container-filter-information .dalam-konsultasi{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 5px 10px;
+        gap: 10px;
+        width: 145px;
+        height: 29px;
+        border: 1px solid #C4C4C4;
+        border-radius: 50px;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+    .container-filter-information .dalam-konsultasi span{
+        width: 125px;
+        height: 19px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #C4C4C4;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .container-filter-information .unfinish-d{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 5px 10px;
+        gap: 10px;
+        width: 70px;
+        height: 29px;
+        border: 1px solid #C4C4C4;
+        border-radius: 50px;
+        flex: none;
+        order: 3;
+        flex-grow: 0;
+    }
+    .container-filter-information .unfinish-d span{
+        width: 50px;
+        height: 19px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #C4C4C4;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        text-align: start;
+    }
+
+    .container-history-keluhan-konten{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 15px;
+        
+        position: absolute;
+        width: 345px;
+        height: 296px;
+        left: 15px;
+        top: 151px;
+    }
+    .container-history-keluhan-konten-sub{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        gap: 10px;
+        width: 315px;
+        height: 316px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .container-history-keluhan-konten-sub img{
+        width: 315px;
+        height: 183px;
+        border-radius: 5px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .keterangan-history-keluhan-konten-sub{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 5px;
+        width: 276px;
+        height: 20px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .keterangan-history-keluhan-konten-sub .menunggu{
+        width: 57px;
+        height: 14px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FAD24D;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .keterangan-history-keluhan-konten-sub .komputer{
+        width: 103px;
+        height: 14px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #C4C4C4;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .keterangan-history-keluhan-konten-sub .tanggal{
+        width: 66px;
+        height: 14px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #C4C4C4;
+        flex: none;
+        order: 4;
+        flex-grow: 0;
+    }
+
+    .keluhan-pengguna{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 5px;
+        width: 110px;
+        height: 19px;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+    .keluhan-pengguna span{
+        width: 325px;
+        height: 19px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .permintaan-harapan-pengguna{
+        width: 315px;
+        height: 14px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+        flex: none;
+        order: 3;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+}

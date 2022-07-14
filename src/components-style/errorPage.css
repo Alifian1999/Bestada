@@ -1,0 +1,66 @@
+@media only screen and (min-width:375px){
+    .container-error-page{
+        position: relative;
+        width: 375px;
+        height: 720px;
+        background: #FFFFFF;
+    }
+
+    .container-error-page .person-error{
+        position: absolute;
+        width: 162px;
+        height: 128px;
+        left: 106px;
+        top: 208px;
+    }
+
+    .container-error-page p{
+        position: absolute;
+        width: 235px;
+        height: 28px;
+        left: 70px;
+        top: 360px;
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 14px;
+        text-align: center;
+        
+        color: #000000;
+    }
+
+    .container-error-page div{
+        position: absolute;
+        width: 235px;
+        height: 28px;
+        left: 70px;
+        top: 360px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+
+        color: #000000;
+    }
+
+    .container-error-page div button{
+        width: 119px;
+        height: 46px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #47ADE7;
+        flex: none;
+        border: none;
+        margin-top: 60px;
+        border-radius: 50px;
+    }
+}

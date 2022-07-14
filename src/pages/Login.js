@@ -7,10 +7,9 @@ import StatusBar from "../components/StatusBar";
 import SplashScreen from "../components/SplashScreen";
 import eyeLogoFalse from '../assets/eye-logo.png'
 import eyeLogoTrue from '../assets/eye-logo-true.png'
-import baseAPI from "../API/baseAPI";
 
 
-const Login = () =>{
+const Login = ({setToken, setIdUser}) =>{
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [displayPassword, setDisplayPassword] = useState(false)
@@ -36,15 +35,20 @@ const Login = () =>{
         }
         const options = {
           method: 'POST',
-          url: 'https://stoplight.io/mocks/bestada/interview/65467795/mobile/user/v1/auth/signin',
-          headers: {'Content-Type': 'application/json', 'X-API-KEY': 'xxx'},
-          data: {username: 'tes123', password: '123'}
+          url: 'http://34.101.70.83:5200/mobile/user/v1/auth/signin',
+          headers: {'Content-Type': 'application/json', 'X-API-KEY': 'l!nt@h-B@!k'},
+          data: user
         };
         
         axios.request(options).then(function (response) {
-          console.log(response.data);
+            console.log(response.data.data.token);
+          setToken(response.data.data.token)
+          setIdUser(response.data.data._id)
+          window.location.replace('/beranda')
+          setIsLogin(true)
         }).catch(function (error) {
-          console.error(error);
+            console.log(error);
+          setIsLogin(false)
         });
     }
     
