@@ -9,6 +9,13 @@ import addVector from '../assets/addVektor.png'
 import dropDown from '../assets/dropDown.png'
 
 const RequestService = () =>{
+    useEffect(()=>{
+    if(localStorage.getItem("user") === null){
+        alert('silakan login terlebih dahulu')
+       return window.location.replace('/login')
+    }
+    },[])
+
     const [modal,setModal] = useState(false)
     const [selectedFile, setSelectedFile] = useState()
     const [preview, setPreview] = useState()

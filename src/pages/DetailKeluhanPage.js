@@ -9,6 +9,13 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 const DetailItem = () =>{
+    useEffect(()=>{
+    if(localStorage.getItem("user") === null){
+        alert('silakan login terlebih dahulu')
+        window.location.replace('/login')
+    }
+    },[])
+
     const [value, setValue] = useState([])
     const token = localStorage.getItem("token")
 

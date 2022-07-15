@@ -19,6 +19,12 @@ import profil from '../assets/profil.png'
 
 
 const Beranda = () =>{
+    useEffect(()=>{
+    if(localStorage.getItem("user") === null){
+        alert('silakan login terlebih dahulu')
+       return window.location.replace('/login')
+    }
+    },[])
     return(
         <div className="container-beranda">
             <div className="container-beranda-top">

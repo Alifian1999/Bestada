@@ -8,7 +8,7 @@ import ErrorPage from './pages/ErrorPage';
 import SubmitSuccess from './pages/SuccessPage';
 import HistoryKeluhan from './pages/HistoryPage';
 import DetailItem from './pages/DetailKeluhanPage'
-import React, { useState } from 'react';
+import React from 'react';
 
 function App() {
   return (
@@ -16,13 +16,13 @@ function App() {
       <Router>
         <Routes>
           <Route path='/login' element={<Login/>}/>
-          <Route path='/beranda' element={<Beranda/>}/>
+          <Route path='/' element={<Beranda/>}/>
           <Route path='/register' element={<Register/>}/>
-          <Route path='/beranda/request-service' element={<RequestService/>} />
+          <Route path='/request-service' element={<RequestService/>} />
           <Route path='/error' element={<ErrorPage/>} />
           <Route path='/success' element={<SubmitSuccess/>}/>
           <Route path='beranda/history-keluhan' element={<HistoryKeluhan/>}/>
-          <Route path='/beranda/history-keluhan/detail-item' element={<DetailItem/>}/>
+          <Route path='/history-keluhan/detail-item' element={<DetailItem/>}/>
         </Routes>
       </Router>
     </div>
