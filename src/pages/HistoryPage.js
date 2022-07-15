@@ -9,25 +9,26 @@ import { Link } from "react-router-dom";
 
 const HistoryKeluhan = () =>{
     const [value,setValue] = useState([])
+    const token = localStorage.getItem("token")
+
     useEffect(()=>{
     const options = {
       method: 'GET',
       url: 'https://stoplight.io/mocks/bestada/interview/65467795/mobile/user/v1/ticket/',
-      params: {_id: '62a18e8e6795a77454ec73fa', search: 'adn'},
+      params: {_id: '62a18e8e6795a77454ec73fa', search: 'laptop'},
       headers: {
         'Content-Type': 'application/json',
         'X-API-KEY': 'l!nt@h-B@!k',
-        Authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmExOGU4ZTY3OTVhNzc0NTRlYzczZmEiLCJ1c2VybmFtZSI6ImJlc3RhZGEiLCJzdGF0dXMiOiJhY3RpdmUiLCJyb2xlIjoidXNlciIsImlhdCI6MTY1NzgxMzYxNywiZXhwIjoxNjU3OTAwMDE3fQ.4wFOyJDZJoSnsqLrzZM-V4Nx5kX4_B4BXVAfsyDpFOg'
+        Authorization: `Bearer ${token}`
       }
     };
-
     axios.request(options).then(function (response) {
       setValue(response.data)
     }).catch(function (error) {
       console.error(error);
     });
     },[])
-    
+    console.log(value);
     return(
         <div className="container-history-keluhan">
             <StatusBar/>
@@ -48,16 +49,16 @@ const HistoryKeluhan = () =>{
             </div>
             <Link to='/beranda/history-keluhan/detail-item'>
             <div className="container-history-keluhan-konten">
-                {value?value.data&&value.data.map((e)=>
-                <div className="container-history-keluhan-konten-sub">
+                {value?value.data&&value.data.map((e,i)=>
+                <div className="container-history-keluhan-konten-sub" key={i}>
                     <img src={e.image_url} alt="" />
                     <div className="keterangan-history-keluhan-konten-sub">
-                        <small className="menunggu">Menunggu</small>
-                        <small className="komputer">Komputer&Laptop</small>
+                        <small className="menunggu">{e.status}</small>
+                        <small className="komputer">{e.category}</small>
                         <small className="tanggal">13 Juli 2021</small>
                     </div>
                     <div className="keluhan-pengguna">
-                        <span>{e.category}</span>
+                        <span>{e.title}</span>
                     </div>
                     <span className="permintaan-harapan-pengguna">{e.description}</span>
                 </div>

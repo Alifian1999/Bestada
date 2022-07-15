@@ -158,6 +158,7 @@
         top: 659px;
         border-radius: 3px;
         background: #47ADE7;
+        cursor: pointer;
     }
 
     .button-request-service{

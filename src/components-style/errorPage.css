@@ -62,5 +62,6 @@
         border: none;
         margin-top: 60px;
         border-radius: 50px;
+        cursor: pointer;
     }
 }

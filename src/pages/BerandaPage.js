@@ -55,8 +55,10 @@ const Beranda = () =>{
                         </Link>
                     </div>
                     <div className="container-keluhan-saya">
-                        <Link to='/beranda/history-keluhan'><img src={bookList} alt="" /></Link>
-                        <span>keluhan Saya</span>
+                        <Link to='/beranda/history-keluhan'>
+                            <img src={bookList} alt="" />
+                            <span>keluhan Saya</span>
+                        </Link>
                     </div>
                 </div>
                 <div className="container-aktivitas-terbaru">

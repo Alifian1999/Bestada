@@ -9,7 +9,7 @@ import eyeLogoFalse from '../assets/eye-logo.png'
 import eyeLogoTrue from '../assets/eye-logo-true.png'
 
 
-const Login = ({setToken, setIdUser}) =>{
+const Login = () =>{
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [displayPassword, setDisplayPassword] = useState(false)
@@ -41,9 +41,7 @@ const Login = ({setToken, setIdUser}) =>{
         };
         
         axios.request(options).then(function (response) {
-            console.log(response.data.data.token);
-          setToken(response.data.data.token)
-          setIdUser(response.data.data._id)
+          localStorage.setItem("token",response.data.data.token)
           window.location.replace('/beranda')
           setIsLogin(true)
         }).catch(function (error) {
@@ -53,9 +51,9 @@ const Login = ({setToken, setIdUser}) =>{
     }
     
     useEffect(()=>{
-        if(username.length !== 0){
+        if(username.length || password.length !== 0){
             setButtonState(true)
-        }else if(username.length === 0){
+        }else if(username.length || password.length === 0){
             setButtonState(false)
         }
     },[username])

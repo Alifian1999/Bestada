@@ -8,7 +8,7 @@ import StatusBar from '../components/StatusBar'
 import addVector from '../assets/addVektor.png'
 import dropDown from '../assets/dropDown.png'
 
-const RequestService = ({token}) =>{
+const RequestService = () =>{
     const [modal,setModal] = useState(false)
     const [selectedFile, setSelectedFile] = useState()
     const [preview, setPreview] = useState()
@@ -16,6 +16,7 @@ const RequestService = ({token}) =>{
     const [issueCategory, setIssueCategory] = useState(false)
     const [issueDescription, setIssueDescription] = useState()
     const [isReadytoSubmit, setReadytoSubmit] = useState(false)
+    const token = localStorage.getItem("token")
     useEffect(() => {
         if (!selectedFile) {
             setPreview(undefined)
@@ -32,7 +33,7 @@ const RequestService = ({token}) =>{
         }
         setSelectedFile(e.target.files[0])
     }
-    const handleSubmit = (e) =>{
+    const handleSubmit = async(e) =>{
         e.preventDefault()
         const formData = new FormData()
         formData.append("title",issue)
@@ -40,16 +41,26 @@ const RequestService = ({token}) =>{
         formData.append("image",selectedFile.name)
         formData.append("description",issueDescription)
 
-
-          axios.post('http://localhost:5000/post-ticket',formData,{
-            headers:{
-                'Content-Type': 'multipart/form-data',
+        const options = {
+            method: 'POST',
+            url: 'http://34.101.70.83:5200/mobile/user/v1/ticket/',
+            headers: {
+              'Content-Type': 'multipart/form-data',
               'X-API-KEY': 'l!nt@h-B@!k',
-              'Bearer-Token': 'Bearer xxx',
-            }
-          })
-
+              Authorization: `Bearer ${token}`,
+            },
+            data: formData
+          };
+          
+          axios.request(options).then(function (response) {
+            console.log(response.data);
+            window.location.replace('/success')
+          }).catch(function (error) {
+            window.location.replace('/error')
+            console.error(error);
+          });
     }
+    
 
     useEffect(()=>{
         if(preview && issue && issueCategory && issueDescription !== undefined | null){
@@ -95,8 +106,8 @@ const RequestService = ({token}) =>{
                 </div>
             </div>
             {isReadytoSubmit?
-            <div className='button-request-service-success'>
-                <button className='button-request-service-success-button' onClick={(e)=>handleSubmit(e)}>KIRIM</button>
+            <div onClick={(e)=>handleSubmit(e)} className='button-request-service-success'>
+                <button className='button-request-service-success-button' >KIRIM</button>
             </div>
             : 
             <div className='button-request-service'>

@@ -1,5 +1,6 @@
 import successLogo from '../assets/successLogo.png'
-import '../components-style/submitSuccess.css'
+import '../components-style/successPage.css'
+import { Link } from 'react-router-dom'
 
 const SubmitSuccess = () =>{
     return(
@@ -7,7 +8,7 @@ const SubmitSuccess = () =>{
             <img  src={successLogo} alt="" />
             <p>Request kamu telah dikirim, harap menunggu balasan dari kami</p>
             <div>
-                <button>Kembali</button>
+                <Link to='/beranda'><button>Kembali</button></Link>
             </div>
         </div>
     )
