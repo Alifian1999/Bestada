@@ -54,7 +54,7 @@ const HistoryKeluhan = () =>{
                     <span>D</span>
                 </div>
             </div>
-            <Link to='/beranda/history-keluhan/detail-item'>
+            <Link to='/history-keluhan/detail-item'>
             <div className="container-history-keluhan-konten">
                 {value?value.data&&value.data.map((e,i)=>
                 <div className="container-history-keluhan-konten-sub" key={i}>

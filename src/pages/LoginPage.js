@@ -43,7 +43,7 @@ const Login = () =>{
         axios.request(options).then(function (response) {
           localStorage.setItem("token",response.data.data.token)
           localStorage.setItem("user",user)
-          window.location.replace('/')
+          window.location.replace('/beranda')
           setIsLogin(true)
         }).catch(function (error) {
             console.log(error);

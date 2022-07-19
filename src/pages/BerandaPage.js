@@ -55,13 +55,13 @@ const Beranda = () =>{
                 <p className="p-batas-waktu">Akan berakhir pada <span className="span-batas-waktu">17 Agustus 2022</span></p>
                 <div className="container-keluhan">
                     <div className="container-laporan-keluhan">
-                        <Link to='/beranda/request-service'>
+                        <Link to='/request-service'>
                             <img src={person} alt="" />
                             <span> Lapor Keluhan</span>
                         </Link>
                     </div>
                     <div className="container-keluhan-saya">
-                        <Link to='/beranda/history-keluhan'>
+                        <Link to='/history-keluhan'>
                             <img src={bookList} alt="" />
                             <span>keluhan Saya</span>
                         </Link>

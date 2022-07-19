@@ -16,12 +16,12 @@ function App() {
       <Router>
         <Routes>
           <Route path='/login' element={<Login/>}/>
-          <Route path='/' element={<Beranda/>}/>
+          <Route path='/beranda' element={<Beranda/>}/>
           <Route path='/register' element={<Register/>}/>
           <Route path='/request-service' element={<RequestService/>} />
           <Route path='/error' element={<ErrorPage/>} />
           <Route path='/success' element={<SubmitSuccess/>}/>
-          <Route path='beranda/history-keluhan' element={<HistoryKeluhan/>}/>
+          <Route path='/history-keluhan' element={<HistoryKeluhan/>}/>
           <Route path='/history-keluhan/detail-item' element={<DetailItem/>}/>
         </Routes>
       </Router>
